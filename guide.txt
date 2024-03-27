@@ -1,0 +1,100 @@
+<body class="body column">
+    <header class="row">
+        <div class="row">
+            <span class="material-symbols-outlined">bolt</span>
+            <h2>bolt</h2>
+        </div>
+        <nav class="row">
+            <a href="">.</a>
+            <a href="">.</a>
+            <a href="">.</a>
+            <a href="">.</a>
+        </nav>
+    </header>
+    <section class="column" id="">
+        <h1>section 1</h1>
+    </section>
+    <section class="column" id="">
+        <h1>section 2</h1>
+    </section>
+    <section class="column" id="">
+        <h1>section 3</h1>
+    </section>
+    <section class="column" id="">
+        <h1>section 4</h1>
+    </section>
+</body>
+
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", sans-serif;
+  color: #d3f2fc;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+html {
+  width: 100vw;
+  height: 100%;
+}
+html .body {
+  height: 100%;
+  width: 100%;
+  gap: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding-top: 50px;
+  position: relative;
+  background-color: #070e11;
+}
+html .body::-webkit-scrollbar {
+  display: none;
+}
+html .body header {
+  width: 100%;
+  height: 50px;
+  position: sticky;
+  top: 0;
+  padding: 0 24px;
+  flex-shrink: 0;
+  justify-content: space-between;
+  border-bottom: 1px solid #455d6d;
+}
+html .body section {
+  width: 100%;
+  height: 100%;
+  padding: 0 24px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+html .body section:nth-child(even) {
+  background-color: #25303b;
+}
+html .body section:nth-child(odd) {
+  background-color: #070e11;
+}
+
+
+I want a sticky header. What am I doing wrong?
