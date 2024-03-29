@@ -139,6 +139,9 @@ html {
         width: 10%;
       }
       .logo {
+        img {
+          height: 24px;
+        }
         h2 {
           font-family: "Playfair Display", serif;
         }
@@ -380,7 +383,7 @@ html {
           justify-content: flex-start;
           overflow-y: visible;
           overflow-x: scroll;
-          &::-webkit-scrollbar{
+          &::-webkit-scrollbar {
             display: none;
           }
 

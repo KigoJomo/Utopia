@@ -139,6 +139,9 @@ html .body header .logo,
 html .body header .join {
   width: 10%;
 }
+html .body header .logo img {
+  height: 24px;
+}
 html .body header .logo h2 {
   font-family: "Playfair Display", serif;
 }
