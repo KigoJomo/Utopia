@@ -1,0 +1,72 @@
+.img {
+          height: 80%;
+          position: absolute;
+          width: calc((100% / 3) - 8px);
+          border: 1px solid $--white;
+          border-radius: 16px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          img {
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 0.5s ease;
+          }
+          &:hover {
+            img {
+              transform: scale(1.1);
+            }
+          }
+        }
+        .img-1 {
+          left: 0;
+          top: 0;
+        }
+        .img-2 {
+          left: calc(33% + 8px);
+          top: 10vh;
+        }
+        .img-3 {
+          left: calc(66% + 16px);
+          top: 20vh;
+        }
+        @keyframes bounce {
+          0% {
+            .img-1 {
+              top: 0;
+            }
+            .img-2 {
+              top: 10vh;
+            }
+            .img-3 {
+              top: 20vh;
+            }
+          }
+          50% {
+            .img-1 {
+              top: 10vh;
+            }
+            .img-2 {
+              top: 0;
+            }
+            .img-3 {
+              top: 10vh;
+            }
+          }
+          100% {
+            .img-1 {
+              top: 20vh;
+            }
+            .img-2 {
+              top: 10vh;
+            }
+            .img-3 {
+              top: 0;
+            }
+          }
+        }
+
+the images are inside .right
+How do I use the animation?
