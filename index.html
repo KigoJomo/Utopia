@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="shortcut icon" href="./images/utopia ai.png" type="image/x-icon">
     <meta name="description"
@@ -19,82 +19,92 @@
 
 <body class="body column">
     <header class="row">
-        <a href="./index.html" class="row logo">
+        <a href="" class="row logo">
             <img src="./images/utopia ai.png" alt="">
             <h2>utopia</h2>
         </a>
-        <div class="join row">
-            <a href="#community" class="button">
-                <p>join</p>
+        <div class="icons row">
+            <a href="#notifications">
+                <span class="material-symbols-outlined">notifications</span>
+            </a>
+            <a href="#messaging">
+                <span class="material-symbols-outlined">send</span>
             </a>
         </div>
     </header>
 
     <nav id="menu" class="row">
-        <a class="column" href="#home">
+        <a href="" class="row logo">
+            <img src="./images/utopia ai.png" alt="">
+            <h2>utopia</h2>
+        </a>
+        
+        <a class="column active" href="#home">
             <span class="material-symbols-outlined">home</span>
             <p>home</p>
         </a>
         <a class="column" href="#discover">
-            <span class="material-symbols-outlined">explore</span>
+            <span class="material-symbols-outlined">search</span>
             <p>discover</p>
         </a>
         <a class="column" href="#contribute">
-            <span class="material-symbols-outlined">add_box</span>
-            <p>contribute</p>
+            <span class="material-symbols-outlined">add_circle</span>
+            <p>create</p>
         </a>
-        <a class="column" href="#community">
-            <span class="material-symbols-outlined">groups</span>
-            <p>community</p>
+        <a class="column" href="#studios">
+            <span class="material-symbols-outlined">communities</span>
+            <p>studios</p>
+        </a>
+        <a class="column webIcon" href="#messaging">
+            <span class="material-symbols-outlined">send</span>
+            <p>messaging</p>
+        </a>
+        <a class="column webIcon webIcon2" href="#notifications">
+            <span class="material-symbols-outlined">notifications</span>
+            <p>notifications</p>
+        </a>
+        <a class="column" href="#profile">
+            <span class="material-symbols-outlined">person</span>
+            <p>profile</p>
         </a>
     </nav>
 
-    <section class="row" id="home">
-        <div class="left column">
-            <h1 class="column">
-                <div class="span span-1">lights</div>
-                <div class="span span-2">camera</div>
-                <div class="span span-3">A.I</div>
-                <div class="span span-3">...</div>
-            </h1>
-            <p>Welcome to <strong>Utopia.</strong> <br>Join the community to discover, create and be inspired by the
-                limitless potential of artificial intelligence.</p>
-            <div class="row">
-                <a href="#discover" class="button">
-                    <p>discover</p>
-                </a>
-                <a href="#community" class="button">
-                    <p>join</p>
-                </a>
-            </div>
-        </div>
-        <div class="right row">
-            <div class="img img-1">
-                <img src="./images/happy_office_lady.jpg" alt="">
-            </div>
-            <div class="img img-2">
-                <img src="./images/Just thinking.jfif" alt="">
-            </div>
-            <div class="img img-3">
-                <img src="./images/smile.jpeg" alt="">
-            </div>
-        </div>
-    </section>
+    <div class="container row">
+        <section class="column" id="home">
+            <h1>Home</h1>
+            <p>(This section is still under development)</p>
+        </section>
 
-    <section class="column" id="discover">
-        <h1>discover</h1>
-        <p>(This section is still under development)</p>
-    </section>
+        <section class="column" id="discover">
+            <h1>discover</h1>
+            <p>(This section is still under development)</p>
+        </section>
 
-    <section class="column" id="contribute">
-        <h1>contribute</h1>
-        <p>(This section is still under development)</p>
-    </section>
+        <section class="column" id="contribute">
+            <h1>contribute</h1>
+            <p>(This section is still under development)</p>
+        </section>
 
-    <section class="column" id="community">
-        <h1>community</h1>
-        <p>(This section is still under development)</p>
-    </section>
+        <section class="column" id="studios">
+            <h1>studios</h1>
+            <p>(This section is still under development)</p>
+        </section>
+
+        <section class="column" id="messaging">
+            <h1>messaging</h1>
+            <p>(This section is still under development)</p>
+        </section>
+
+        <section class="column" id="notifications">
+            <h1>notifications</h1>
+            <p>(This section is still under development)</p>
+        </section>
+
+        <section class="column" id="profile">
+            <h1>profile</h1>
+            <p>(This section is still under development)</p>
+        </section>
+    </div>
 
     <script src="./scripts/script.js"></script>
 </body>
